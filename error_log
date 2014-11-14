@@ -1,0 +1,11 @@
+[05-Sep-2014 08:13:30 America/Chicago] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(isotope.js.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory' in /home/logiciel/public_html/dev/dannyglix/index.php:14
+Stack trace:
+#0 /home/logiciel/public_html/dev/dannyglix/index.php(14): Slim\Slim::handleErrors(2, 'require(isotope...', '/home/logiciel/...', 14, Array)
+#1 /home/logiciel/public_html/dev/dannyglix/index.php(14): {closure}()
+#2 [internal function]: {closure}('isotope.js')
+#3 /home/logiciel/public_html/dev/dannyglix/Slim/Route.php(441): call_user_func_array(Object(Closure), Array)
+#4 /home/logiciel/public_html/dev/dannyglix/Slim/Slim.php(1314): Slim\Route->dispatch()
+#5 /home/logiciel/public_html/dev/dannyglix/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#6 /home/logiciel/public_html/dev/dannyglix/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 /home/logiciel/public_html/dev/dannyglix/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverri in /home/logiciel/public_html/dev/dannyglix/index.php on line 14
+[05-Sep-2014 08:13:30 America/Chicago] PHP Fatal error:  {closure}() [<a href='function.require'>function.require</a>]: Failed opening required 'isotope.js.php' (include_path='.:/opt/php53/lib/php') in /home/logiciel/public_html/dev/dannyglix/index.php on line 14

@@ -1,0 +1,320 @@
+/* old style*/
+        .timeline-footer{
+                background-color:#01972e !important;
+        }
+        .timeline-header{
+                background-color:#01972e !important;
+        }
+        #twitter-form{
+                        background:rgba(255,255,255,.5);
+                        border-radius:5px;
+                        margin:10px;
+                        padding:10px;
+                        font-family:"arial"; 
+                        font-size:13px;
+                }
+                #twitter-form p{ 
+                        font-size:11px;
+                        text-align: left;
+                }
+                #twitter-form p span{
+                        vertical-align: middle;
+                        padding-left:0px;
+                        color:#666;
+                        font-size: 10px;
+                }
+                #twitter-form input{
+                        border:solid 1px #BBBBBB;
+                        border-radius:5px;
+                        padding:7px;
+                        vertical-align:middle;
+                }
+                #twitter-form textarea{
+                        height: 30px;
+                        margin-bottom: 10px;
+                        background: #ffffff;
+                        border: 1px solid #CCCCCC;
+                        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+                        border-radius: 5px;
+                        padding: 7px;
+                        vertical-align: middle;
+                        resize:none;
+                        -webkit-transition: all .3s ease;
+                        -moz-transition: all .3s ease;
+                        -ms-transition: all .3s ease;
+                        -o-transition: all .3s ease;
+                        transition: all .3s ease;
+                }
+                #twitter-form textarea:focus{
+                        height: 108px;
+                }
+                #twitter-form a.button{
+                        background-clip: padding-box;
+                 background-color: #37C3FF;
+                 background-image: linear-gradient(#92D4F1, #33AFE4);
+                 border-radius: 5px 5px 5px 5px;
+                 box-shadow: 0 0 0.1em 1px rgba(255, 255, 255, 0.608) inset;
+                 line-height: 30px;
+                 padding: 8px 10px;
+                 text-decoration: none;
+                 text-shadow: 0 1px 1px #0080B7;
+                 vertical-align: top;
+                }
+                #twitter-form a.button,#twitter-form a.button:visited{
+                        color:#FFF;
+                }
+                #twitter-form .field{
+                        margin-top:10px;
+                }
+.twitter-sec{
+        
+                background:url('../images/twitter-bg.png') repeat-x ;
+                border-radius:5px;
+                padding-bottom:0px;
+                box-shadow:0px 0px 1px #ccc;
+}
+.twtr-ft{
+background: #eeeeee; /* Old browsers */
+background: -moz-linear-gradient(top, #eeeeee 0%, #e0e0e0 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#e0e0e0)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #eeeeee 0%,#e0e0e0 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #eeeeee 0%,#e0e0e0 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #eeeeee 0%,#e0e0e0 100%); /* IE10+ */
+background: linear-gradient(to bottom, #eeeeee 0%,#e0e0e0 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-9 */
+
+}
+.twtr-avatar{
+        width: 33px !important;
+}
+.twitter-sec > h2 {
+    color: #555555;
+    font-size: 13px;
+    text-align: left;
+    padding-top:7px;
+    line-height:18px;
+}
+.twitter-sec > h2 a:hover{
+        color: #000;
+}
+
+.twitter-sec > p {
+    color: #555555;
+    font-size: 12px;
+    text-align: center;
+}
+#twtr-widget-1 .twtr-bd, #twtr-widget-1 .twtr-timeline i a, #twtr-widget-1 .twtr-bd p, #twtr-widget-1 .twtr-bd p a{
+        font-size:11px;
+        line-height: 13px;
+}
+#twtr-widget-1 .twtr-hd a:hover{
+        text-decoration: none !important;
+}
+#twtr-widget-1 .twtr-doc, #twtr-widget-1 .twtr-hd a, #twtr-widget-1 h3, #twtr-widget-1 h4{
+        font-size: 11px;
+        text-shadow:none;
+}
+#twtr-widget-1 .twtr-new-results, #twtr-widget-1 .twtr-results-inner, #twtr-widget-1 .twtr-timeline{
+        border-radius: 0;
+}
+.twtr-img{
+        height: auto;
+        width: auto;
+}
+#twtr-widget-1 .twtr-tweet-text{
+        margin-left: 34px;
+}
+.twtr-tweet-wrap:hover{
+        background: rgba(200,200,200,0.2);
+        cursor: default;
+}
+.btn:focus{
+        outline:none;
+}
+
+.twitter-widget-tabs-content {
+    position: absolute;
+    top: 26px;
+}
+
+#twitter-widget-tabs{
+        position: relative;
+        height: 302px;
+}
+#twitter-widget-tabs-tabs{
+        background: url("../images/sidebar-tabs-bg.png") no-repeat scroll center bottom transparent;
+        padding-left: 8px;
+}
+
+#twitter-widget-tabs-tabs > li {
+    display: table-cell;
+    vertical-align: bottom;
+}
+#twitter-widget-tabs-tabs li a{
+        float: left;
+    /*margin: 0 -20px;*/
+    padding: 0 20px;
+    text-align: center;
+    /*width: 65px;*/
+    margin: 2px;
+    border-radius: 5px 5px 0 0;
+    color: #555555;
+    font-size: 11px;
+    line-height: 22px;
+background: #d6d6d6; /* Old browsers */
+background: -moz-linear-gradient(top, #d6d6d6 0%, #eeeeee 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d6d6d6), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #d6d6d6 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #d6d6d6 0%,#eeeeee 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #d6d6d6 0%,#eeeeee 100%); /* IE10+ */
+background: linear-gradient(to bottom, #d6d6d6 0%,#eeeeee 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6d6d6', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+
+}
+#twitter-widget-tabs-tabs li a.active{
+        background: #E9E9E9; /* Old browsers */
+        background: -moz-linear-gradient(top, #E9E9E9 0%, #F4F4F4 48%, #ffffff 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E9E9E9), color-stop(48%,#F4F4F4), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #E9E9E9 0%,#F4F4F4 48%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #E9E9E9 0%,#F4F4F4 48%,#ffffff 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #E9E9E9 0%,#F4F4F4 48%,#ffffff 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #E9E9E9 0%,#F4F4F4 48%,#ffffff 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E9E9E9', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+        padding: 1px 20px 2px 20px;
+}
+
+.twtr-tweet-text > p, .twtr-tweet-text > p a{
+        line-height: 13px;
+        font-size: 11px;
+}
+.twtr-widget h3 a{
+        font-size: 11px;
+}
+.twtr-ft span a:hover{
+        color:#000000 !important;
+        text-decoration:none !important;
+}
+a, a:hover, a:active, a:focus {
+    outline: medium none;
+}
+
+
+/* for new twitter wiidget*/
+
+#twitter-widget1 .user > a img ,
+#twitter-widget2 .user > a img ,
+#twitter-widget3 .user > a img {
+        height: 30px;
+        width: auto;
+        margin: 2px 3px 0 0;
+        float: left;
+}
+#twitter-widget1 ,
+#twitter-widget2 ,
+#twitter-widget3 {
+        width: 225px;
+}
+#twitter-widget1 ul.tweet-twitter ,
+#twitter-widget2 ul.tweet-twitter ,
+#twitter-widget3 ul.tweet-twitter {
+        margin: auto;
+        margin-left: -30px;
+        width: 92%;
+}
+#twitter-widget1 ul.tweet-twitter li ,
+#twitter-widget2 ul.tweet-twitter li ,
+#twitter-widget3 ul.tweet-twitter li {
+        padding: 7px 0;
+        float: left;
+        list-style-type: none;
+        width: 280px;
+}
+#twitter-widget1 ul.tweet-twitter li:hover ,
+#twitter-widget2 ul.tweet-twitter li:hover ,
+#twitter-widget3 ul.tweet-twitter li:hover {
+        background: rgba(225, 225, 225, 0.2);
+}
+.user span {
+        float: left;
+        margin-left: 2px;
+}
+.user > a , p.tweet,
+p.timePosted,
+p.tweet a{
+        font-size: 12px;
+        line-height: 13px;
+        word-wrap:break-word;
+}
+ p.tweet a,
+ div.user a {
+         /*color : #13B344;*/
+ }
+.twitter3 {
+        overflow: auto;
+        width: 235px; 
+}
+#box1,
+#box2,
+#box3 {
+        height: 260px;
+        width: 300px;
+        overflow: auto;
+        margin-top: 10px;
+        text-align: left;
+}
+
+p.tweet,
+p.timePosted{
+        width: 243px;
+        float: right;
+}
+
+
+/* for scroll bar */
+#box1 .jspVerticalBar,
+#box2 .jspVerticalBar,
+#box3 .jspVerticalBar {
+        right: 3px;
+        height:95%;
+}
+#box1 .jspVerticalBar > .jspTrack,
+#box2 .jspVerticalBar > .jspTrack,
+#box3 .jspVerticalBar > .jspTrack {
+        height:100% !important;
+}
+#twitter-widget1 ul.tweet-twitter li:first-child ,
+#twitter-widget2 ul.tweet-twitter li:first-child ,
+#twitter-widget3 ul.tweet-twitter li:first-child {
+        padding-top: 0;
+}
+
+#getGetoomi .tooltip.fixed {
+    left: 61px !important;
+    top: 32.5px !important;
+}
+#Getoomi .tooltip.fixed {
+        left: 133px !important;
+    top: 32.5px !important;
+} 
+#heart .tooltip.fixed {
+        left: 185px !important;
+    top: 32.5px !important;
+}
+.content-right-panel {
+  float: left;
+ /* margin-top: 15px;*/
+  padding-bottom: 15px;
+  padding-left: 20px;
+ /* padding-top: 20px;*/
+  width: 260px;
+  margin-top: -20px;
+}
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+    border-color: #66afe9;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+}
+#twitter-form textarea:focus {
+    border-color: #66afe9;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+}
