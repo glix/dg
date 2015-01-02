@@ -73,7 +73,7 @@ $('.row.post-loop').mouseover(function(){
   console.log($top);
   $('.slider-arrow').animate({
     'top': $top
-  },500);
+  },100);
 });
 
 /* Fixed Footer on Resize */

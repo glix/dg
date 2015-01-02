@@ -1868,15 +1868,6 @@ textarea.input-lg {
   -o-user-select: none;
   user-select: none;
 }
-.sort-title {
-  font-family: "Raleway","Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #597b99;
-  font-size: 14px;
-  font-weight: 300;
-}
-.date-sort.btn.btn-default,
-.comment-sort.btn.btn-default,
-.popularity-sort.btn.btn-default { padding: 3px 5px; margin-top: -6px; }
 .btn:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
@@ -2301,9 +2292,9 @@ input[type="button"].btn-block {
   margin: 2px 0 0;
   list-style: none;
   font-size: 16px;
-  /*background-color: #ffffff;*/
-  /*border: 1px solid #cccccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);*/
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
@@ -5732,12 +5723,9 @@ body {
 .clients-more{
   text-align: right;
 }
-.inner-slider-shadow .container span a,
 .clients-more a{
   color: #5b5b5b;
-  font-size: 12px;
-  text-decoration: none; 
-  line-height: 25px;
+  font-size: 14px;
 }
 .clients-more a:hover,
 .clients-more a:focus{
@@ -5792,11 +5780,8 @@ body {
 }
 
 .project-clients{
-  /*background: url(../images/project-clients-bg.png) repeat-x top;*/
+  background: url(../images/project-clients-bg.png) repeat-x top;
   margin-top: 35px;
-}
-.project-clients .container {
-  overflow: visible;
 }
 .clients-carousel-container{
   padding-top: 40px;
@@ -5815,32 +5800,22 @@ body {
 #clients-carousel{
   background: #f9f9f9;
 }
+
 #project_carousel .es-navigation a{
   margin: 0;
-  top: -20px;
+  top: 0;
   bottom: 0;
   height: auto;
-  width: 50px;
-  -webkit-transition: all 200ms ease-in 0s;
-  -moz-transition: all 200ms ease-in 0s;
-  -o-transition: all 200ms ease-in 0s;
-  transition: all 200ms ease-in 0s;
-}
-#project_carousel .es-navigation a:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1); 
+  width: 200px;
 }
 #project_carousel .es-navigation a.es-prev{
-  background: url(../images/clients/arrow-left-2.png) no-repeat center center;
+  background: url(../images/clients/arrow-left.png) no-repeat center center;
 }
 #project_carousel .es-navigation a.es-next{
-  background: url(../images/clients/arrow-right-2.png) no-repeat center center;
+  background: url(../images/clients/arrow-right.png) no-repeat center center;
 }
-#project_carousel .es-navigation .es-prev { left: -18px !important }
-#project_carousel .es-navigation .es-next { right: -18px !important }
 .common-searches > li a:hover,.common-searches > li a:active,.common-searches > li a:focus {
+    /*background: #ededed;*/
     background: #f4f4f4;
     color: #597B99;
 } 
@@ -7099,12 +7074,10 @@ td.loupe.loupe-large {
  }
 
 footer#main-footer {
-  /*padding: 50px 0px !important;*/
+  padding: 50px 0px;
   background-color: #246BA5;
-  background: url(../images/backgrounds/hero-bg.jpg) !important;
+  background: url(../images/backgrounds/hero-bg.jpg);
   background-repeat: repeat;
-  position: absolute;
-  width: 100%;
   /*margin-top: 30px;*/
 }
 footer#main-footer .footer-social {
@@ -7151,20 +7124,14 @@ footer#main-footer .footer-menu li a {
   text-align: center;
   font-size: 28px;
   line-height: 50px;
-  background: url(../images/grid1.png);
-  background-color: #fff;  
+  background-color: #F4F9FC;
   color: #91C3E0;
   padding: 0px;
-  border-radius: 6px;
+  background-image: url(../img/grid.png);
 }
 #scrollUp:hover {
   text-decoration: none;
-  background-color: #cccccc;
-  color: #fff;
-}
-#scrollUp:focus {
-  background-color: #b4b4b4;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset;
+  background-color: #00a2e8;
   color: #fff;
 }
 .post-side-bar {
@@ -7698,7 +7665,7 @@ footer#main-footer .footer-menu li a {
 .date-sort.btn.btn-default,
 .comment-sort.btn.btn-default,
 .popularity-sort.btn.btn-default {
-    font-size: 10px !important;
+    font-size: 12px !important;
 }
 
 
@@ -7755,9 +7722,5 @@ footer#main-footer .footer-menu li a {
   100% { -webkit-transform:rotate(-360deg); }
 }
 
+.social-share { margin-left: 30px; }
 .st_twitter_hcount .stButton { margin-top: 10px; }
-
-.addthis_button_more.pushed.btn.btn-default {
-  padding: 2px 6px;
-  font-size: 13px;
-}
