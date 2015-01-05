@@ -155,17 +155,13 @@
             s.parentNode.insertBefore(gcse, s);
           })();
         </script>
-        <div id="gsearch">
+        <div id="gsearch"></div>
+        <div class="social-share">
+          <a class="addthis_button_more pushed btn btn-default" href="">
+            <img src="http://dev.clientreviews.info/mhc/wp-content/uploads/2014/11/share.png" width="11" border="0" alt="Share" />
+            <span>Share</span>
+          </a>
         </div>
-     <div class="social-share" style="margin-left: 30px;">
-        <span class='st_linkedin_hcount' displayText='LinkedIn'></span>
-        <span class='st_facebook_hcount' displayText='Facebook'></span>
-        <span class='st_twitter_hcount' displayText='Tweet'></span>
-        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-        <script type="text/javascript">stLight.options({publisher: "d6572f3c-8c19-4707-a7f8-6370bce93985", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
-      </div>
-    <script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50f634c21af71b12"></script>
       </div>
     </div>
     <div class="row"></div>
@@ -224,6 +220,7 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'de,en,es,fr,iw,ja,la,nl,pl,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 }
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-541828f85f3c673e"></script>
 <div class="ajax-load"><img src="assets/img/ajax-loader-f.gif"></div>
 </body>
 </html>

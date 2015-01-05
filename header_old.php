@@ -25,138 +25,16 @@
 
   <link href="assets/favicon.ico" rel="shortcut icon"> 
   <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
-  <style type="text/css">
-  #container25 canvas{
-    height: 100% !important;
-    width:100% !important;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    left: 0;
-  }
-  #stats{
-    display: none !important;
-  }
-  </style>
+
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]> 
+    @javascript html5shiv respond.min
+  <![endif]-->
+
   <title>danny glix</title>   
 </head>
 <body>
-
-<div id="container25"></div>
-    <script src="assets/webGL/threejs.min.js"></script>
-    <script src="assets/webGL/Detector.js"></script>
-    <script src="assets/webGL/stats.min.js"></script>
-    <script type="x-shader/x-vertex" id="vertexshader">
-      attribute float size;
-      attribute vec3 customColor;
-      varying vec3 vColor;
-
-      void main() {
-        vColor = customColor;
-        vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-        gl_PointSize = size * ( 300.0 / length( mvPosition.xyz ) );
-        gl_Position = projectionMatrix * mvPosition;
-      }
-    </script>
-    <script type="x-shader/x-fragment" id="fragmentshader">
-      uniform vec3 color;
-      uniform sampler2D texture;
-      varying vec3 vColor;
-
-      void main() {
-        gl_FragColor = vec4( color * vColor, 1.0 );
-        gl_FragColor = gl_FragColor * texture2D( texture, gl_PointCoord );
-      }
-    </script>
-    <script>
-    if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
-    var renderer, scene, camera, stats;
-    var particleSystem, uniforms, geometry;
-    var particles = 100000;
-    var WIDTH = 2560;
-    var HEIGHT = 1600;
-    init();
-    animate();
-
-    function init() {
-      camera = new THREE.PerspectiveCamera( 40, WIDTH / HEIGHT, 1, 10000 );
-      camera.position.z = 300;
-      scene = new THREE.Scene();
-      var attributes = {
-        size:        { type: 'f', value: null },
-        customColor: { type: 'c', value: null }
-      };
-      uniforms = {
-        color:     { type: "c", value: new THREE.Color( 0xffffff ) },
-        texture:   { type: "t", value: THREE.ImageUtils.loadTexture( "assets/webGL/textures/sprites/spark1.png" ) }
-      };
-      var shaderMaterial = new THREE.ShaderMaterial( {
-        uniforms:       uniforms,
-        attributes:     attributes,
-        vertexShader:   document.getElementById( 'vertexshader' ).textContent,
-        fragmentShader: document.getElementById( 'fragmentshader' ).textContent,
-        blending:       THREE.AdditiveBlending,
-        depthTest:      false,
-        transparent:    true
-      });
-      var radius = 200;
-      geometry = new THREE.BufferGeometry();
-      var positions = new Float32Array( particles * 3 );
-      var values_color = new Float32Array( particles * 3 );
-      var values_size = new Float32Array( particles );
-      var color = new THREE.Color();
-      for( var v = 0; v < particles; v++ ) {
-        values_size[ v ] = 20;
-        positions[ v * 3 + 0 ] = ( Math.random() * 2 - 1 ) * radius;
-        positions[ v * 3 + 1 ] = ( Math.random() * 2 - 1 ) * radius;
-        positions[ v * 3 + 2 ] = ( Math.random() * 2 - 1 ) * radius;
-        color.setHSL( v / particles, 1.0, 0.5 );
-        values_color[ v * 1 + 0 ] = color.r;
-        values_color[ v * 1 + 1 ] = color.g;
-        values_color[ v * 1 + 2 ] = color.b;
-      }
-      geometry.addAttribute( 'position', new THREE.BufferAttribute( positions, 3 ) );
-      geometry.addAttribute( 'customColor', new THREE.BufferAttribute( values_color, 3 ) );
-      geometry.addAttribute( 'size', new THREE.BufferAttribute( values_size, 1 ) );
-      particleSystem = new THREE.PointCloud( geometry, shaderMaterial );
-      scene.add( particleSystem );
-      renderer = new THREE.WebGLRenderer();
-      renderer.setSize( WIDTH, HEIGHT );
-      renderer.setClearColor( 0xededed, 1);
-      var container = document.getElementById( 'container25' );
-      container.appendChild( renderer.domElement );
-      stats = new Stats();
-      stats.domElement.style.position = 'absolute';
-      stats.domElement.style.top = '0px';
-      container.appendChild( stats.domElement );
-      window.addEventListener( 'resize', onWindowResize, false );
-    }
-
-    function onWindowResize() {
-      camera.aspect = window.innerWidth / window.innerHeight;
-      camera.updateProjectionMatrix();
-      renderer.setSize( window.innerWidth, window.innerHeight );
-    }
-
-    function animate() {
-      requestAnimationFrame( animate );
-      render();
-      stats.update();
-    }
-
-    function render() {
-      var time = Date.now() * 0.005;
-      particleSystem.rotation.z = 0.01 * time;
-      var size = geometry.attributes.size.array;
-      for( var i = 0; i < particles; i++ ) {
-        size[ i ] = 10 * ( 1 + Math.sin( 0.1 * i + time ) );
-      }
-      geometry.attributes.size.needsUpdate = true;
-      renderer.render( scene, camera );
-    }
-  </script>
-
 <div id="fb-root"></div> 
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -372,7 +250,4 @@
 </div>
 
 </div>
-<script type="text/javascript">
-  jQuery('#container25').find('stats').css('display','none');
-</script>
 

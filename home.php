@@ -136,7 +136,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3 home-three-clmn sh1-v-r">
-        <h5 class="custom-h5 align-center">Common Searches:</h5>
+        <h5 class="custom-h5">Common Searches:</h5>
         <ul class="common-searches">
          <li><a href="#">GUI Design</a></li>
          <li><a href="#">Website Development</a></li>
@@ -150,7 +150,7 @@
      </div>
      <div class="col-md-6 home-three-clmn sh1-v-r">
       <h5 class="custom-h5">Latest News:</h5>
-      <div id="sorts" class="button-group tab-for-news" style="text-align: right; margin-top:5px;">
+      <div id="sorts" class="button-group tab-for-news" style="text-align: right; margin-top: -35px; margin-bottom: 15px;">
         <span class="sort-title">Sort By : </span>
         <button data-sort-by="title" class="date-sort btn btn-default">Date</button>
         <button data-sort-by="description" class="comment-sort btn btn-default">Comment</button>
@@ -251,7 +251,7 @@
 </div>
 <div class="inner-slider-shadow">
   <div class="container">
-    <span style="float: right; margin-right: 50px; font-size: 12px"><a href="project-single">View All</a></span>
+    <span style="float: right; padding-right: 7px; font-size: 12px"><a href="project-single">View All</a></span>
   </div>
 </div>
 <?php include("footer.php"); ?>
