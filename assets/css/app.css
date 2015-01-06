@@ -7099,12 +7099,10 @@ td.loupe.loupe-large {
  }
 
 footer#main-footer {
-  /*padding: 50px 0px !important;*/
+  padding: 50px 0px;
   background-color: #246BA5;
-  background: url(../images/backgrounds/hero-bg.jpg) !important;
+  background: url(../images/backgrounds/hero-bg.jpg);
   background-repeat: repeat;
-  position: absolute;
-  width: 100%;
   /*margin-top: 30px;*/
 }
 footer#main-footer .footer-social {
